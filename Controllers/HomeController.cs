@@ -39,14 +39,14 @@ public class HomeController : Controller
             var time = currentConditions?["datetime"];
             var temperature = currentConditions?["temp"];
             var feelsLike = currentConditions?["feelslike"];
-            var percipProb = currentConditions?["percipprob"];
+            var uvIndex = currentConditions?["uvindex"];
             var coverage = currentConditions?["conditions"];
 
 
             ViewBag.CurrentTime = time;
             ViewBag.Temperature = temperature;
             ViewBag.FeelsLike = feelsLike;
-            ViewBag.PercipProb = percipProb;
+            ViewBag.UvIndex = uvIndex;
             ViewBag.Coverage = coverage;
 
             return View("Index");
